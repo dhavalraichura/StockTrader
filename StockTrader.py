@@ -1,11 +1,9 @@
-from cgi import print_environ
-from xml.dom.minidom import Element
 from selenium import webdriver
 from selenium import *
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import os,time,msvcrt
+import os,time
 PATH = ".\chromedriver.exe"
 driver = webdriver.Chrome(PATH)
 driver.get('https://finance.yahoo.com/quote/%5ENSEI?p=^NSEI&.tsrc=fin-srch')
